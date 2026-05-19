@@ -1,6 +1,6 @@
 # create-html skill
 
-Convert any document into a polished, self-contained HTML file using 20 purpose-built presentation templates.
+Takes any document and turns it into an HTML file — auto-picks from 20 layouts (slide decks, status reports, code reviews, and more) based on what's in the file.
 
 ## Usage
 
@@ -48,38 +48,9 @@ Template taxonomy inspired by [HTML Effectiveness](https://thariqs.github.io/htm
 
 ## Installation
 
-<details>
-<summary><strong>Claude Code</strong></summary>
-
 ```bash
-# project-level (this project only)
-cp SKILL.md .claude/commands/create-html.md
-
-# global (available in every project)
-cp SKILL.md ~/.claude/commands/create-html.md
+npx skills@latest add pavelsimo/create-html
 ```
-
-Invoke with: `/create-html`
-
-</details>
-
-<details>
-<summary><strong>OpenAI Codex</strong></summary>
-
-Append the contents of `SKILL.md` to `AGENTS.md` in your repo root, or to `~/.codex/instructions.md` for global availability.
-
-Invoke with: `codex "convert slides.pptx to html"`
-
-</details>
-
-<details>
-<summary><strong>GitHub Copilot</strong></summary>
-
-Append the contents of `SKILL.md` to `.github/copilot-instructions.md` in your repo.
-
-Invoke by opening Copilot Chat and describing the task: "convert this document to a slide deck HTML file".
-
-</details>
 
 ## Contributing
 
